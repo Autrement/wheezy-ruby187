@@ -9,7 +9,7 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
     libbz2-dev libcurl4-openssl-dev libxml2-dev libxslt1-dev zlib1g-dev \
     libmysqlclient-dev libmagickcore-dev libmagickwand-dev libreadline-dev \
     libffi-dev \
-    git \
+    git openssh-client \
     vim \
   && rm -rf /var/lib/apt/lists/*
 
