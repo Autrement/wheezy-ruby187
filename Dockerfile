@@ -3,7 +3,7 @@ FROM buildpack-deps:wheezy-curl
 RUN sed -i "s/httpredir.debian.org/mirror.evolix.org/" /etc/apt/sources.list
 
 RUN apt-get update && apt-get -y --no-install-recommends install \
-    build-essential \
+    make \
     apt-utils \
     ruby1.8 ruby1.8-dev rubygems1.8 \
     libbz2-dev libcurl4-openssl-dev libxml2-dev libxslt1-dev zlib1g-dev \
